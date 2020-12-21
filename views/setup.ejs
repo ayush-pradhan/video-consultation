@@ -1,12 +1,13 @@
 <%- include('includes/header') %>
 
 <section>
-  <h2>Set up OpenTok embed code</h2>
-
-  <p>Create and paste an <a href="https://tokbox.com/developer/embeds" target="_blank">OpenTok video chat embed</a> code.</p>
+  <div id="otEmbedContainer" style="width:800px; height:640px"></div> <script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=e14e8ccb-c123-47ce-8898-7915f3558b0a&room=DEFAULT_ROOM"></script>
+  <!-- <h2>Set up OpenTok embed code</h2> -->
+<!-- 
+  <p>Create and paste an <a href="https://tokbox.com/embed/embed/ot-embed.js?embedId=e14e8ccb-c123-47ce-8898-7915f3558b0a&room=DEFAULT_ROOM" target="_blank">OpenTok video chat embed</a> code.</p> -->
 
   <form method="POST">
-
+  
     <div>
       <textarea id="embed_code_value" name="embed_code_value" rows="10" cols="20"
         required autofocus><%= data %></textarea>

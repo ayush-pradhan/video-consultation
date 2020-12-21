@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><%= typeof title !== 'undefined' ? title : 'OpenTok embed appointment demo' %></title>
+    <title><%= typeof title !== 'undefined' ? title : 'Video Consultation' %></title>
     <% for (var a of assets.styles) { %>
     <link rel="stylesheet" type="text/css" href="/css/<%= a %>">
     <% } %>
@@ -15,10 +15,10 @@
 
 <body>
   <div class="container header">
-    <h1>OpenTok Embed Appointment Demo</h1>
+    <h1>Book Appointment</h1>
     <% if (user) { %>
       <nav role="main">
-        <ul class="row">
+        <ul class="row header-nav">
           <li><strong><%= user.role %></strong></li>
           <li><a href="/">Home</a></li>
           <li><a href="/dashboard/<%= user.role.toLowerCase() %>">Dashboard</a></li>
